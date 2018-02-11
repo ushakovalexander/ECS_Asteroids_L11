@@ -33,8 +33,8 @@ public class ReplaceThrottleInertiaSystem : ReactiveSystem<GameEntity>
             var addedThrottle = entity.throttleInput.value > 0f
                 ? settings.throttleSpeed * deltaTime
                 : -settings.slowdownSpeed * deltaTime;
-
-            playerEntity.ReplaceInertia(inertiaValue + addedThrottle);
+            var newInertia = Mathf.Max(0, inertiaValue + addedThrottle);
+            playerEntity.ReplaceInertia(newInertia);
         }
     }
 }

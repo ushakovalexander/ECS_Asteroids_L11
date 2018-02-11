@@ -1,18 +1,18 @@
 ﻿using Entitas;
 using UnityEngine;
 
-public class ThrottleInputSystem : IExecuteSystem
+public class InputThrottleSystem : IExecuteSystem
 {
     private Contexts _contexts;
 
-    public ThrottleInputSystem(Contexts contexts)
+    public InputThrottleSystem(Contexts contexts)
     {
         _contexts = contexts;
     }
 
     public void Execute()
     {
-        var verticalAxisValue = Input.GetAxisRaw("Vertical");
+        var verticalAxisValue = Input.GetAxis("Vertical");
         _contexts.game.ReplaceThrottleInput(verticalAxisValue);
     }
 }

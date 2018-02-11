@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b20d2e4ab6a8f343b14b2142b5883eb, type: 3}
   m_Name: Settings
   m_EditorClassIdentifier: 
-  playerPrefabResourceName: playerShip1_blue
-  startingPosition: {x: 1.5, y: 0}
+  playerPrefabResourceName: playerShip3_green
+  startingPosition: {x: 0, y: 0}
   startingRotation: 90
   maxSpeed: 15
-  throttleSpeed: 3
+  throttleSpeed: 0.5
   slowdownSpeed: 1
   rotateSpeed: 180

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class SetRotationSystem : ReactiveSystem<GameEntity>
 {
+
+    private Vector3 velocity;
+	private Vector3 clampedVelocity;
+
     public SetRotationSystem(Contexts contexts) : base(contexts.game)
     {
     }

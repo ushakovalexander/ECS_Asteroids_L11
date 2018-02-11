@@ -4,3 +4,7 @@
 /Library
 /*.sln
 .DS_Store
+/Entitas.properties
+/User.properties
+/hw_11_reference.userprefs
+/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache

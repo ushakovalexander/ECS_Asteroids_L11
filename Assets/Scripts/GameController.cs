@@ -14,7 +14,6 @@ public class GameController : MonoBehaviour
         _systems = CreateSystems(_contexts);
 
         _contexts.game.SetSettings(settings);
-
         _systems.Initialize();
     }
 
@@ -31,8 +30,9 @@ public class GameController : MonoBehaviour
             .Add(new AddViewSystem(contexts))
             .Add(new SetPositionSystem(contexts))
             .Add(new SetRotationSystem(contexts))
+            .Add(new SetAccelerationSystem(contexts))
 
-            .Add(new ThrottleInputSystem(contexts))
+            .Add(new InputThrottleSystem(contexts))
             .Add(new ReplaceThrottleInertiaSystem(contexts))
 
             .Add(new InputRotationSystem(contexts))
